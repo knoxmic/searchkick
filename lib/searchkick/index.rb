@@ -209,7 +209,7 @@ module Searchkick
     end
 
     def batches_left
-      bulk_indexer.batches_left
+      bulk_indexer.send(:batches_left)
     end
 
     # other
